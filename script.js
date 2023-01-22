@@ -36,12 +36,16 @@ $(document).ready(function () {
         console.log(currentHour, element);
         colorBlock.addClass("present");
         colorBlock.removeClass("past");
+        colorBlock.removeClass("future");
       } else if (currentHour > Number.parseInt(element.id)) {
         console.log(currentHour, element, "line 42");
         colorBlock.addClass("future");
+        colorBlock.removeClass("past");
+        colorBlock.removeClass("present");
       } else {
         colorBlock.addClass("past");
         colorBlock.removeClass("present");
+        colorBlock.removeClass("future");
       }
     }
   }
