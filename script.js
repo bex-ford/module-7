@@ -26,11 +26,11 @@ $(document).ready(function () {
   $("#hour17 .description").val(localStorage.getItem("hour17"));
 
   displayDate();
-
+ 
   function colorChange() {
     let currentHour = moment().format("h A"); // current hour using moment.js
     console.log(Number.parseInt(currentHour));
-    for (let index = 0; index < colorBlock.length; index++) {
+     for (let index = 0; index < colorBlock.length; index++) {
       const element = colorBlock[index];
       if (Number.parseInt(currentHour) === Number.parseInt(element.id)) {
         console.log(currentHour, element);
@@ -49,5 +49,5 @@ $(document).ready(function () {
       }
     }
   }
-  colorChange();
-});
+    colorChange();
+ });

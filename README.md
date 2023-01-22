@@ -34,9 +34,17 @@ The following animation demonstrates the application functionality:
 
 ![A user clicks on slots on the color-coded calendar and edits the events.](./images/05-third-party-apis-homework-demo.gif)
 
-## What i learned from this project
+## What i learned from this project:
 
+I firstly added the current date to the header of the HTML page. This was complete using moment.js. I had to make sure moment.js documentation was incremented into by HTML file so that the JS file would work correctly. 
 
+![date](images/date.png)
+
+I ensured that when entering the events into the schedule that they saved to when a user exits the schedule it will save to local storage as you can see in the screen shot below. 
+
+![schedule](images/schedule.png)
+
+![local storage](images/localstorage.png)
 
 
 ### GitHub
